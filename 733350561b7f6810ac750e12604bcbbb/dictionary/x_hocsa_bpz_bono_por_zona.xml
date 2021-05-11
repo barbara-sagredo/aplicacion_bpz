@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Bono por Zona" max_length="40" name="x_hocsa_bpz_bono_por_zona" sizeclass="22" type="collection">
+        <element label="Aprobador proyecto" max_length="32" name="u_slx_aprobador" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Cliente" mandatory="true" max_length="32" name="u_slx_cliente" reference="core_company" reference_qual="u_slx_aplica_bpz=true^parentISEMPTY^EQ" reference_qual_condition="u_slx_aplica_bpz=true^parentISEMPTY^EQ" type="reference"/>
+        <element choice="1" default="1" label="Estado Solicitud" max_length="40" name="u_slx_estado_solicitud" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Creada" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Creada" language="es" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Solicitar Aprobación" language="es" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="Solicitar Aprobación" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="Cancelada" language="es" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="Cancelada" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="Aprobada" sequence="40" value="4"/>
+                <element inactive_on_update="false" label="Aprobada" language="es" sequence="40" value="4"/>
+                <element inactive_on_update="false" label="Rechazada" sequence="50" value="5"/>
+                <element inactive_on_update="false" label="Rechazada" language="es" sequence="50" value="5"/>
+                <element inactive_on_update="false" label="Bono Autorizado" sequence="60" value="6"/>
+                <element inactive_on_update="false" label="Bono Autorizado" language="es" sequence="60" value="6"/>
+                <element inactive_on_update="false" label="Bono Rechazado" sequence="70" value="7"/>
+                <element inactive_on_update="false" label="Bono Rechazado" language="es" sequence="70" value="7"/>
+            </choice>
+        </element>
+        <element label="Fecha Inicio del  Viaje" mandatory="true" max_length="40" name="u_slx_fecha_inicio_viaje" type="glide_date"/>
+        <element label="Fecha Término del  Viaje" mandatory="true" max_length="40" name="u_slx_fecha_termino_viaje" type="glide_date"/>
+        <element default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Nombre del Trabajador" max_length="32" name="u_slx_nombre_trabajador" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Notificado" max_length="40" name="u_slx_notificado" read_only="true" type="boolean"/>
+        <element label="Proyecto " mandatory="true" max_length="32" name="u_slx_proyecto" reference="x_hocsa_san_ficha_de_proyecto" reference_cascade_rule="restrict" reference_qual="javascript:&quot;u_slx_division=&quot;+current.u_slx_sitio_division" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Sitio o División " mandatory="true" max_length="32" name="u_slx_sitio_division" reference="core_company" reference_qual="javascript:&quot;parent=&quot;+current.u_slx_cliente+&quot;^parentISNOTEMPTY^u_slx_aplica_bpz=true&quot;" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Solicita Aprobación" max_length="40" name="u_slx_solicita_aprobacion" type="boolean"/>
+        <element choice="1" label="Tipo de Alojamiento " mandatory="true" max_length="50" name="u_slx_tipo_alojamiento" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Hotel" language="es" sequence="10" value="hotel"/>
+                <element inactive_on_update="false" label="Hotel" sequence="10" value="hotel"/>
+                <element inactive_on_update="false" label="Campamento" sequence="20" value="campamento"/>
+                <element inactive_on_update="false" label="Campamento" language="es" sequence="20" value="campamento"/>
+            </choice>
+        </element>
+        <element label="Total Noches" max_length="40" name="u_slx_total_noches" read_only="true" type="integer"/>
+        <element default="javascript:gs.getProperty('x_hocsa_bpz.slx.bpz.validador')" label="Aprobador financiero" max_length="32" name="u_slx_validador" read_only="true" reference="sys_user" type="reference"/>
+    </element>
+</database>

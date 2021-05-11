@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Notas" section_id="34dd9c571bbf68904e288511604bcb18" sys_domain="global" table="x_hocsa_bpz_bono_por_zona" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>watch_list</element>
+            <position>0</position>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2021-05-05 16:38:14</sys_created_on>
+            <sys_id>5c51a2f31bb3a8d0ac750e12604bcb96</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notas" display_value="Notas" name="x_hocsa_bpz_bono_por_zona" sys_domain="global" view="Default view">34dd9c571bbf68904e288511604bcb18</sys_ui_section>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2021-05-05 16:38:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2021-05-05 16:38:14</sys_created_on>
+            <sys_id>dc51a2f31bb3a8d0ac750e12604bcb96</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notas" display_value="Notas" name="x_hocsa_bpz_bono_por_zona" sys_domain="global" view="Default view">34dd9c571bbf68904e288511604bcb18</sys_ui_section>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2021-05-05 16:38:14</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>2</position>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2021-05-05 16:38:14</sys_created_on>
+            <sys_id>5051a2f31bb3a8d0ac750e12604bcb97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notas" display_value="Notas" name="x_hocsa_bpz_bono_por_zona" sys_domain="global" view="Default view">34dd9c571bbf68904e288511604bcb18</sys_ui_section>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2021-05-05 16:38:14</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>3</position>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2021-05-05 16:38:14</sys_created_on>
+            <sys_id>d051a2f31bb3a8d0ac750e12604bcb97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notas" display_value="Notas" name="x_hocsa_bpz_bono_por_zona" sys_domain="global" view="Default view">34dd9c571bbf68904e288511604bcb18</sys_ui_section>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2021-05-05 16:38:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>4</position>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2021-05-05 16:38:14</sys_created_on>
+            <sys_id>5451a2f31bb3a8d0ac750e12604bcb97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Notas" display_value="Notas" name="x_hocsa_bpz_bono_por_zona" sys_domain="global" view="Default view">34dd9c571bbf68904e288511604bcb18</sys_ui_section>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2021-05-05 16:38:14</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Notas</caption>
+            <header>false</header>
+            <name>x_hocsa_bpz_bono_por_zona</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>slx.bs</sys_created_by>
+            <sys_created_on>2021-05-03 17:46:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>34dd9c571bbf68904e288511604bcb18</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_hocsa_bpz_bono_por_zona</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="bpz" source="x_hocsa_bpz">733350561b7f6810ac750e12604bcbbb</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="bpz">733350561b7f6810ac750e12604bcbbb</sys_scope>
+            <sys_update_name>sys_ui_section_34dd9c571bbf68904e288511604bcb18</sys_update_name>
+            <sys_updated_by>slx.bs</sys_updated_by>
+            <sys_updated_on>2021-05-03 17:46:47</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

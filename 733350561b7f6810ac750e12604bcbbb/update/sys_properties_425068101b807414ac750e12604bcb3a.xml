@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Bono por Zona activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.x_hocsa_bpz_bono_por_zona_activity.fields</name>
+        <read_roles/>
+        <suffix>x_hocsa_bpz</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-06 20:31:42</sys_created_on>
+        <sys_id>425068101b807414ac750e12604bcb3a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>glide.ui.x_hocsa_bpz_bono_por_zona_activity.fields</sys_name>
+        <sys_package display_value="bpz" source="x_hocsa_bpz">733350561b7f6810ac750e12604bcbbb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="bpz">733350561b7f6810ac750e12604bcbbb</sys_scope>
+        <sys_update_name>sys_properties_425068101b807414ac750e12604bcb3a</sys_update_name>
+        <sys_updated_by>slx.bs</sys_updated_by>
+        <sys_updated_on>2021-05-10 16:09:07</sys_updated_on>
+        <type>string</type>
+        <value>assigned_to,cmdb_ci,state,opened_by,work_notes,comments,*Attachments*,u_slx_aprobador,u_slx_fecha_inicio_viaje,u_slx_fecha_termino_viaje,u_slx_tipo_alojamiento,u_slx_total_noches,u_slx_nombre_trabajador,u_slx_cliente,u_slx_sitio_division</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=425068101b807414ac750e12604bcb3a"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey name="glide.ui.x_hocsa_bpz_bono_por_zona_activity.fields" tablename="sys_properties">425068101b807414ac750e12604bcb3a</documentkey>
+        <fieldname>description</fieldname>
+        <language>es</language>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-06 20:31:42</sys_created_on>
+        <sys_id>425068101b807414ac750e12604bcb3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-06 20:31:42</sys_updated_on>
+        <tablename>sys_properties</tablename>
+        <value>Tarea Campos de formateador de actividad</value>
+    </sys_translated_text>
+</record_update>

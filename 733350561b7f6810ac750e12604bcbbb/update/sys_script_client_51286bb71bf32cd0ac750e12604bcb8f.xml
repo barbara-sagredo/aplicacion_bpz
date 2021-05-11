@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_slx_fecha_termino_viaje</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>SLX Validar fecha de fin y calculo</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+
+        return;
+    }
+    var fechaIni = g_form.getValue('u_slx_fecha_inicio_viaje');
+    var fechaFin = g_form.getValue('u_slx_fecha_termino_viaje');
+
+
+
+    var ga = new GlideAjax('SLX_Comparacion_fechas');
+    ga.addParam('sysparm_name', 'compFechaIni_Fin');
+    ga.addParam('sysparm_datefield', fechaIni);
+    ga.addParam('sysparm_datefieldFin', fechaFin);
+    ga.getXMLAnswer(function(answer) {
+
+
+            if (answer == '1') {
+
+                g_form.clearValue('u_slx_fecha_termino_viaje');
+				g_form.setValue('u_slx_total_noches', 0);
+				g_form.showErrorBox('u_slx_total_noches', 'Debe pernoctar al menos una noche para optar a este bono', 'error');
+
+                g_form.showErrorBox('u_slx_fecha_termino_viaje', 'La fecha de término no puede ser anterior o igual a la fecha de inicio', 'error');
+
+            } else if (answer == '2') {
+                //	g_form.setValue('u_slx_total_noches', 0);
+
+                g_form.clearValue('u_slx_fecha_termino_viaje');
+                g_form.setValue('u_slx_total_noches', 0);
+				g_form.showErrorBox('u_slx_total_noches', 'Debe pernoctar al menos una noche para optar a este bono', 'error');
+                g_form.showErrorBox('u_slx_fecha_termino_viaje', 'La fecha de termino no puede ser mayor a hoy', 'error');
+
+            } else {
+                var gl = new GlideAjax('SLX_Comparacion_fechas');
+                gl.addParam('sysparm_name', 'comparacionFechas');
+                gl.addParam('sysparm_datefield', fechaIni);
+                gl.addParam('sysparm_datefieldFin', fechaFin);
+                gl.getXMLAnswer(function(answer) {
+
+                    if (Number(answer) >= 1 && fechaIni != '' && fechaFin != '') {
+                       
+                        g_form.setValue('u_slx_total_noches', Number(answer));
+
+                    }
+
+
+
+
+                });
+            }
+
+	
+    });
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>slx.bs</sys_created_by>
+        <sys_created_on>2021-05-05 21:47:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>51286bb71bf32cd0ac750e12604bcb8f</sys_id>
+        <sys_mod_count>73</sys_mod_count>
+        <sys_name>SLX Validar fecha de fin y calculo</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="bpz" source="x_hocsa_bpz">733350561b7f6810ac750e12604bcbbb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="bpz">733350561b7f6810ac750e12604bcbbb</sys_scope>
+        <sys_update_name>sys_script_client_51286bb71bf32cd0ac750e12604bcb8f</sys_update_name>
+        <sys_updated_by>slx.bs</sys_updated_by>
+        <sys_updated_on>2021-05-07 01:11:57</sys_updated_on>
+        <table>x_hocsa_bpz_bono_por_zona</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

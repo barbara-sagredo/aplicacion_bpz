@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_slx_proyecto</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>SLX Limpiar campos de proyecto</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+	
+        g_form.clearValue('u_slx_aprobador');
+    
+    //Type appropriate comment here, and begin script below
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>slx.bs</sys_created_by>
+        <sys_created_on>2021-05-05 22:52:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>87e637771bbb2cd0ac750e12604bcbdb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>SLX Limpiar campos de proyecto</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="bpz" source="x_hocsa_bpz">733350561b7f6810ac750e12604bcbbb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="bpz">733350561b7f6810ac750e12604bcbbb</sys_scope>
+        <sys_update_name>sys_script_client_87e637771bbb2cd0ac750e12604bcbdb</sys_update_name>
+        <sys_updated_by>slx.bs</sys_updated_by>
+        <sys_updated_on>2021-05-05 22:54:05</sys_updated_on>
+        <table>x_hocsa_bpz_bono_por_zona</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="bpz">733350561b7f6810ac750e12604bcbbb</application>
+        <file_path/>
+        <instance_id>b4276e2fdbe6278049eac59705961979</instance_id>
+        <instance_name>honeywellchiledev</instance_name>
+        <name>sys_script_client_87e637771bbb2cd0ac750e12604bcbdb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;u_slx_proyecto&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;SLX Limpiar campos de proyecto&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+	
+        g_form.clearValue('u_slx_aprobador');
+    
+    //Type appropriate comment here, and begin script below
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;slx.bs&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-05 22:52:15&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;87e637771bbb2cd0ac750e12604bcbdb&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;SLX Limpiar campos de proyecto&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="bpz" source="x_hocsa_bpz"&gt;733350561b7f6810ac750e12604bcbbb&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="bpz"&gt;733350561b7f6810ac750e12604bcbbb&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_87e637771bbb2cd0ac750e12604bcbdb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;slx.bs&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-05 22:54:05&lt;/sys_updated_on&gt;&lt;table&gt;x_hocsa_bpz_bono_por_zona&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1007307728</payload_hash>
+        <record_name>SLX Limpiar campos de proyecto</record_name>
+        <reverted_from/>
+        <source>4c4350561b7f6810ac750e12604bcbbc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>slx.bs</sys_created_by>
+        <sys_created_on>2021-05-05 22:54:05</sys_created_on>
+        <sys_id>f557bbfb1bbb2cd0ac750e12604bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1793ebd047a0000001</sys_recorded_at>
+        <sys_updated_by>slx.bs</sys_updated_by>
+        <sys_updated_on>2021-05-05 22:54:05</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>bd57bbfb01bb2cd03631e5c52981b2c1</update_guid>
+        <update_guid_history>bd57bbfb01bb2cd03631e5c52981b2c1:1007307728,3b17b3f755bb2cd001dd275d033df970:-1063273043,07e6bb7b25bb2cd0733e09e8a240d77c:978723806</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>slx.bs</sys_created_by>
+        <sys_created_on>2021-05-05 22:54:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>b25b9f5e9ecb465887cad74fd3d03ec1</sys_id>
+        <sys_metadata>87e637771bbb2cd0ac750e12604bcbdb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SLX Limpiar campos de proyecto</sys_name>
+        <sys_package display_value="bpz" source="x_hocsa_bpz">733350561b7f6810ac750e12604bcbbb</sys_package>
+        <sys_parent display_value="Bono por Zona">2753941a1b7f6810ac750e12604bcbbf</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="bpz">733350561b7f6810ac750e12604bcbbb</sys_scope>
+        <sys_scope_delete display_value="">6861cb6e8ea74de1998b028ac418d9f1</sys_scope_delete>
+        <sys_update_name>sys_script_client_87e637771bbb2cd0ac750e12604bcbdb</sys_update_name>
+        <sys_update_version display_value="sys_script_client_87e637771bbb2cd0ac750e12604bcbdb">f557bbfb1bbb2cd0ac750e12604bcbc2</sys_update_version>
+        <sys_updated_by>slx.bs</sys_updated_by>
+        <sys_updated_on>2021-05-05 22:54:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_hocsa_bpz_bono_por_zona</collection>
+        <condition table="x_hocsa_bpz_bono_por_zona">stateCHANGESTO4^EQ<item display_value="Aprobada por aprobador financiero" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="4"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p><br /></p>
+<hr />
+<p><br /></p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <event_name>antivirus.infected</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from>ADMIN.KAIROS</from>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p style="margin: 0cm; font-size: 12pt; font-family: 'Times New Roman', serif;"><span style="font-family: Arial, sans-serif; color: #222222;">Estimado Solicitante:</span></p>
+<p style="margin: 0cm; font-size: 12pt; font-family: 'Times New Roman', serif;"><span style="font-family: Arial, sans-serif; color: #222222;">&nbsp;</span></p>
+<p style="margin: 0cm; font-size: 12pt; font-family: 'Times New Roman', serif;"><span style="font-family: Arial, sans-serif; color: #222222;">Le comunicamos que su solicitud de Bono por Zona N&deg; ${number} </span><span style="font-family: Arial, sans-serif; color: #222222;">NO HA SIDO VALIDADA. Se le agradece ingresar al registro para revisar las notas y realizar las acciones correspondientes.</span></p>
+<p style="margin: 0cm; font-size: 12pt; font-family: 'Times New Roman', serif;"><br /></p>
+<p style="margin: 0cm; font-size: 12pt; font-family: 'Times New Roman', serif;"><span style="font-family: Arial, sans-serif; color: #222222;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">${mail_script:SLX_llevame_a_la_solicitud}&nbsp;</span></span></p>
+<p style="margin: 0cm; font-size: 12pt; font-family: 'Times New Roman', serif;"><br /></p>
+<p style="margin: 0cm; font-size: 12pt; font-family: 'Times New Roman', serif;"><span style="font-family: Arial, sans-serif; color: #222222;">Atte.</span></p>
+<p style="margin: 0cm; font-size: 12pt; font-family: 'Times New Roman', serif;"><span style="font-family: Arial, sans-serif; color: #222222;">Gesti&oacute;n de Bono por Zona </span></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>SLX Segunda aprobacion rechazada</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>u_slx_nombre_trabajador</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Validación de Solicitud ${number}  ${short_description}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>slx.bs</sys_created_by>
+        <sys_created_on>2021-05-10 22:08:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>25cc51e91bc4fc944e288511604bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SLX Segunda aprobacion rechazada</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="bpz" source="x_hocsa_bpz">733350561b7f6810ac750e12604bcbbb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="bpz">733350561b7f6810ac750e12604bcbbb</sys_scope>
+        <sys_update_name>sysevent_email_action_25cc51e91bc4fc944e288511604bcbc9</sys_update_name>
+        <sys_updated_by>slx.bs</sys_updated_by>
+        <sys_updated_on>2021-05-10 22:08:08</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>SLX_llevame_a_la_solicitud</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(current, template, email, email_action, event) {
+	var link = current.getLink();
+			
+	template.print('<font face="arial">');
+	
+	var backgroundColor = 'background-color: #527b80;';
+	var border = 'border: 1px solid #54868c;';
+	var color = 'color: #ffffff;';
+	var fontSize = 'font-size: 13px;';
+	var fontFamily = 'font-family: Helvetica, Arial, sans-serif;';
+	var textDecoration = 'text-decoration: none; border-radius: 3px;';
+	var webKitBorder = '-webkit-border-radius: 3px;';
+	var mozBorder = '-moz-border-radius: 3px;';
+	var display = 'display: inline-block;';
+	var padding = 'padding: 9px;';
+	
+	if (email_action.name == "Incident Survey") {
+		color = 'color: #343d47;';
+		backgroundColor = 'background-color: #e6e8ea;';
+		border = 'border: 1px solid #bdc0c4;';
+	}
+	template.print('<a href="' + link + '"');
+	template.print('style="' + backgroundColor + border + color + fontSize + fontFamily + textDecoration + webKitBorder + mozBorder + display + padding);
+	template.print('">');
+	template.print(gs.getMessage('Llévame a la solicitud'));
+	template.print('</a>');
+	template.print('</font>');
+	template.print('<br><br>');
+	template.print('<p><font size="2" color="#000000" face="arial">');
+	template.print('</font></p>');
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>slx.bs</sys_created_by>
+        <sys_created_on>2021-05-10 21:50:21</sys_created_on>
+        <sys_id>c5b81d6d1b44fc944e288511604bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SLX_llevame_a_la_solicitud</sys_name>
+        <sys_package display_value="bpz" source="x_hocsa_bpz">733350561b7f6810ac750e12604bcbbb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="bpz">733350561b7f6810ac750e12604bcbbb</sys_scope>
+        <sys_update_name>sys_script_email_c5b81d6d1b44fc944e288511604bcbe7</sys_update_name>
+        <sys_updated_by>slx.bs</sys_updated_by>
+        <sys_updated_on>2021-05-10 21:50:21</sys_updated_on>
+    </sys_script_email>
+</record_update>
